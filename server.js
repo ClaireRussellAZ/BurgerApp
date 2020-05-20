@@ -15,10 +15,6 @@ app.use(express.json());
 app.use(express.static("app/public"));
 //
 app.use(bodyParser.urlencoded({extended: false}));
-// Routes
-// =============================================================
-require("./app/routes/api-routes.js")(app);
-require("./app/routes/html-routes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
